@@ -11,7 +11,7 @@ a = functions.makeBoard()
 c = random.randint(0,1)
 #Print Beggining Information
 print("You are playing as X\nThe computer is O.")
-print("The max value for both row and column is 3. If you put anything above or below those, values, an error will be reached. Good luck beating my AI and have fun! :)")
+print("The max value for both row and column is 3. If you put anything above or below those, values, an error will be reached. If you place an X in any spot that's already filled, it will just ask for an input again. Good luck beating my AI and have fun! :)")
 time.sleep(10)
 
 
@@ -34,4 +34,3 @@ while True:
     print("Tie! :/")
     break
   c += 1
-  
