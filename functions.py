@@ -19,7 +19,10 @@ def getInput(board):
   userrow -= 1
   usercol = int(input("Column(1-3): "))
   usercol -= 1
-  board[userrow][usercol] = "X"
+  if(board[userrow][usercol] == "X" or board[userrow][usercol]== "O" ):
+    getInput(board)
+  else:
+    board[userrow][usercol] = "X"
   
 def compInput(board):
   comprow = random.randint(1,3)
@@ -70,7 +73,3 @@ def ai(board):
     if board[i][j] == " ":
       board[i][j] = "O"
       return
-  
-      
-  
-  
